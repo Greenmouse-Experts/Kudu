@@ -1,5 +1,6 @@
 import Input from '@/components/Input';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Login() {
     return (
@@ -38,9 +39,9 @@ export default function Login() {
                             Don’t have an account?{' '}
                         </p>
                         <p className="text-center">
-                            <a href="#" className="text-orange-500 hover:underline">
+                            <Link href={'/sign-up'} className="text-orange-500 hover:underline">
                                 Sign Up &rarr;
-                            </a>
+                            </Link>
                         </p>
                     </div>
                 </div>
