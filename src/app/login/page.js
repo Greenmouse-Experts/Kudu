@@ -50,7 +50,9 @@ export default function Login() {
                 <div className='w-full flex justify-center'>
                     <div className="w-3/4 h-[500px] p-10 rounded-md border flex flex-col gap-8" style={{ backdropFilter: 'blur(15px)', borderColor: 'rgba(255, 255, 255, 0.35)' }}>
                         <p className='text-sm font-[500] text-white'>Welcome to</p>
-                        <Image src={'/images/kudu1.png'} width={80} height={20} alt='kudu-logo' />
+                        <Link href={'/'}>
+                            <Image src={'/images/kudu1.png'} width={80} height={20} alt='kudu-logo' />
+                        </Link>
                         <p className='text-sm font-[500] text-white'>Join us today and enjoy exclusive deals, personalized shopping, and faster checkout.</p>
                         <div className='w-full flex justify-center'>
                             <Image src={'/images/signIn.png'} width={200} height={20} alt='sign-in' />
@@ -60,7 +62,7 @@ export default function Login() {
                         </p>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
     );
 }

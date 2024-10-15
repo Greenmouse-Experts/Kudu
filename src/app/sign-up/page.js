@@ -52,9 +52,9 @@ export default function Login() {
                     </button>
 
                     <div className='flex my-2 gap-4 w-full'>
-                        <hr class="w-full flex mt-3" style={{ backgroundColor: 'rgba(141, 141, 141, 1)' }} />
-                        <div class="flex text-gray-500">or</div>
-                        <hr class="w-full flex mt-3" style={{ backgroundColor: 'rgba(141, 141, 141, 1)' }} />
+                        <hr className="w-full flex mt-3" style={{ backgroundColor: 'rgba(141, 141, 141, 1)' }} />
+                        <div className="flex text-gray-500">or</div>
+                        <hr className="w-full flex mt-3" style={{ backgroundColor: 'rgba(141, 141, 141, 1)' }} />
                     </div>
 
                     <div className='flex my-2 gap-4 w-full'>
