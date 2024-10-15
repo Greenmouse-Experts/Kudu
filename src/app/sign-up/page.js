@@ -76,7 +76,7 @@ export default function Login() {
                 <div className='flex justify-center my-2'>
                     <div className='flex flex-col gap-2'>
                         <p className="text-center">
-                            <Link href="/login" className="text-orange-500 hover:underline">
+                            <Link href="/login" className="text-kuduOrange">
                                 Sign In &rarr;
                             </Link>
                         </p>

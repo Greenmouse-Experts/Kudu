@@ -39,7 +39,7 @@ export default function Login() {
                             Don’t have an account?{' '}
                         </p>
                         <p className="text-center">
-                            <Link href={'/sign-up'} className="text-orange-500 hover:underline">
+                            <Link href={'/sign-up'} className="text-kuduOrange">
                                 Sign Up &rarr;
                             </Link>
                         </p>
