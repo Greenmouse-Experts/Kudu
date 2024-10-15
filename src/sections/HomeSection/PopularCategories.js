@@ -38,7 +38,7 @@ export default function PopularCategories() {
                 </div>
                 <div className="flex w-full gap-8 flex-wrap">
                     {categoriesArr.map((category, index) => (
-                        <div className="flex flex-col gap-4 py-6 px-14 items-center bg-white rounded-lg shadow-sm">
+                        <div className="flex flex-col gap-4 py-6 px-14 items-center bg-white rounded-lg shadow-sm" key={index}>
                             <span className="h-[110px]">
                                 <Image src={category.photo} width={100} height={114} alt={category.name} />
                             </span>
