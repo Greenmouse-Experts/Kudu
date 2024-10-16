@@ -16,7 +16,9 @@ module.exports = {
         kuduLightBlue: "rgba(241, 241, 242, 1)",
         kuduOrange500: "rgba(255, 133, 86, 1)",
         kuduPeach: "rgba(254, 222, 199, 1)",
-        kuduGrayPeach: "rgba(239, 239, 239, 1)"
+        kuduGrayPeach: "rgba(239, 239, 239, 1)",
+        kuduDarkBlue: "rgba(25, 45, 76, 1)",
+        kuduSkyBlue: "rgba(198, 229, 250, 1)"
       },
       backgroundImage: {
         'custom-bg': "url('/images/signInBg.png')",

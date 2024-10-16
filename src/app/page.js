@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import CategorySection from "@/sections/HomeSection/CategorySection";
 import DealsSection from "@/sections/HomeSection/DealsSection";
 import FashionBanner from "@/sections/HomeSection/FashionBanner";
+import Footer from "@/sections/HomeSection/Footer";
+import PhonesBanner from "@/sections/HomeSection/PhonesBanner";
 import PopularCategories from "@/sections/HomeSection/PopularCategories";
 import PostSection from "@/sections/HomeSection/PostSection";
 import ProductsSection from "@/sections/HomeSection/ProductsSection";
@@ -28,7 +30,14 @@ export default function Home() {
           <div className="w-full flex">
             <ProductsSection />
           </div>
+          <div className="w-full flex">
+            <PhonesBanner />
+          </div>
         </div>
+        <Footer />
+          <div className="py-5 flex w-full justify-center" style={{ backgroundColor: 'rgba(49, 49, 51, 1)' }}>
+            <p className="text-sm text-kuduGray">Copyright © 2024 Kudu.com. All rights reserved</p>
+          </div>
       </div>
     </>
   );
