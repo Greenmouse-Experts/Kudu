@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
         <div className="bg-white shadow-md fixed w-full z-50 py-2 lg:py-0 md:py-0">
-            <div className="container mx-auto flex items-center justify-between px-4 md:px-14">
+            <div className="container mx-auto flex items-center justify-between px-4 md:px-14 lg:px-32">
                 {/* Logo Section */}
                 <div className="lg:flex md:flex hidden">
                     <Image

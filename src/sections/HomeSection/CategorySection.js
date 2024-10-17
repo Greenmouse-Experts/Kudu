@@ -1,6 +1,6 @@
 export default function CategorySection() {
     return (
-            <div className="w-[30%] p-4 bg-white rounded-md shadow-sm">
+            <div className="w-[32%] p-4 bg-white rounded-md shadow-sm">
                 <h2 className="text-lg font-semibold mb-4">Product Categories</h2>
                 <ul className="space-y-5">
                     <li>

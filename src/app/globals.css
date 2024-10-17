@@ -25,6 +25,8 @@ body {
   }
 }
 
-.clip-diagonal {
-  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+@media (min-width: 1280px) {
+  .clip-diagonal {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+  }
 }

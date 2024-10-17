@@ -97,9 +97,9 @@ export default function ProductsSection() {
     ]
     return (
         <>
-            <div className="flex flex-col gap-5">
-                <div className="flex w-full flex-wrap lg:gap-x-10 md:gap-x-10 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
-                    {productsArr.slice(0, 12).map((product, index) => (
+            <div className="flex flex-col gap-5 w-full">
+                <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
+                    {productsArr.slice(0, 10).map((product, index) => (
                         <div className="flex flex-col gap-4" key={index}>
                             <div className="p-4 flex justify-center bg-kuduGrayPeach">
                                 <Image src={product.photo} width={130} height={130} alt={product.title} />
@@ -117,7 +117,7 @@ export default function ProductsSection() {
                 </div>
                 <div className="flex w-full gap-8">
                     <div className="bg-kuduDarkBlue md:w-1/2 flex w-full py-2 px-4 lg:rounded-lg md:rounded-lg">
-                        <div className="flex flex-grow flex-col gap-2 py-3">
+                        <div className="flex flex-col flex-grow gap-2 py-3">
                             <h2 className="md:text-2xl text-base font-semibold text-white">Boost Leads for Your Business</h2>
                             <p className="text-white text-sm mb-4">Place an advert on Kudu</p>
                             <button className="bg-white shadow-sm flex gap-2 text-kuduDarkBlue justify-center uppercase font-semibold w-full px-4 py-3">Shop Tech
@@ -128,10 +128,10 @@ export default function ProductsSection() {
                                 </span>
                             </button>
                         </div>
-                        <div className="md:flex hidden">
+                        <div className="md:flex lg:flex xl:flex flex-grow justify-end hidden">
                             <Image src={'/images/user_phone.png'} width={250} height={50} alt="user phone" />
                         </div>
-                        <div className="flex md:hidden">
+                        <div className="flex flex-grow justify-end md:hidden">
                             <Image src={'/images/user_phone.png'} width={250} height={30} alt="user phone" />
                         </div>
                     </div>
@@ -153,10 +153,10 @@ export default function ProductsSection() {
                     </div>
                 </div>
 
-                <div className="flex w-full flex-wrap lg:gap-x-10 md:gap-x-10 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
-                    {productsArr.slice(12, 18).map((product, index) => (
-                        <div className="flex flex-col gap-4" key={index}>
-                            <div className="p-4 flex justify-center bg-kuduGrayPeach">
+                <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
+                    {productsArr.slice(10, 15).map((product, index) => (
+                        <div className="flex flex-col gap-4 w-full" key={index}>
+                            <div className="p-4 flex justify-center bg-kuduGrayPeach w-full">
                                 <Image src={product.photo} width={130} height={130} alt={product.title} />
                             </div>
                             <div className="flex flex-col gap-3">

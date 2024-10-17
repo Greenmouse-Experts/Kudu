@@ -8,6 +8,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '320px',        // Extra small devices (mobile)
+        'sm': '640px',        // Small devices (tablets)
+        'md': '1024px',       // Large devices (laptops/desktops)
+        'lg': '1280px',       // Extra large devices (desktops)
+        'xl': '1536px',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

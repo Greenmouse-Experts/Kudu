@@ -6,12 +6,12 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <footer className="bg-kuduOrange text-white relative w-full">
-            <div className="relative bg-kuduOrange lg:min-h-[740px]">
-                <div className="w-full flex py-20 justify-between items-center lg:px-40 lg:flex-row md:flex-row flex-col px-10 gap-14">
-                    <div className="md:flex w-full hidden">
+            <div className="relative bg-kuduOrange lg:min-h-[740px] h-full">
+                <div className="w-full flex py-20 justify-between items-center lg:px-44 xl:px-44 lg:flex-row md:flex-row flex-col px-10 gap-14 xl:gap-48">
+                    <div className="md:flex xl:w-1/4 md:w-1/4 flex-grow hidden">
                         <Image src={'/images/kudu1.png'} width={150} height={50} />
                     </div>
-                    <div className="flex w-full justify-center">
+                    <div className="flex xl:w-1/2 lg:w-2/5 md:w-1/2 xs:w-full flex-grow justify-center">
                         <div className="flex w-full flex-col gap-2">
                             <p className="text-white text-base font-semibold text-center">
                                 Stay Updated
@@ -29,17 +29,17 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex w-full justify-center">
+                    <div className="flex xl:w-1/3 sm:justify-center xs:justify-center">
                         <div className="flex w-full flex-col gap-2">
-                            <p className="text-white text-base font-semibold text-center">
+                            <p className="text-white text-base font-semibold md:px-6 lg:px-0 xl:px-0 lg:text-left md:text-left xs:text-center">
                                 Stay Updated
                             </p>
-                            <p className="text-white text-xs text-center">
+                            <p className="text-white text-xs md:px-6 xl:px-0 lg:px-0 lg:text-left md:text-left xs:text-center">
                                 Subscribe to Our Newsletter
                             </p>
-                            <div className="flex items-center gap-5 md:px-20 w-full mt-3">
+                            <div className="flex items-center gap-5 lg:gap-3 md:px-6 lg:px-0 xl:px-0 xl:justify-end w-full mt-3">
                                 <Image src={'/images/google_play.png'} width={120} height={50} alt="google_play" />
-                                <Image src={'/images/google_play.png'} width={120} height={50} alt="google_play" />
+                                <Image src={'/images/apple_playstore.png'} width={120} height={50} alt="google_play" />
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,8 @@ const Footer = () => {
                     <span><a href="#" className="text-gray-400">Chat with Us</a></span>
                     <span><a href="#" className="text-gray-400">FAQs</a></span>
                 </div>
-                <div className="absolute -left-[20%] w-full h-[470px] bg-black py-20 lg:flex md:flex hidden flex-col px-48 clip-diagonal" style={{ width: '120%' }}>
-                    <div className="flex justify-between ml-40 w-full pl-44 pr-20">
+                <div className="absolute lg:-left-[20%] lg:w-[120%] w-full h-[470px] bg-black py-20 lg:flex md:flex sm:hidden xs:hidden flex-col lg:px-48 xl:px-48 clip-diagonal">
+                    <div className="flex justify-between lg:ml-40 xl:ml-48 w-full lg:px-20 xl:px-48 px-10">
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Buy</h3>
                             <ul className="space-y-3">
@@ -102,7 +102,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="mt-4 py-2 ml-40 pl-44 pr-20 w-full flex flex-col gap-4">
+                    <div className="mt-4 py-2 lg:ml-40 lg:px-20 w-full px-10 flex flex-col gap-4">
                         <div className="w-full h-[1px] border-t border-gray-700 my-3" />
                         <div className="flex w-full my-3">
                             <div className="flex flex-grow">
@@ -229,6 +229,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="py-5 flex w-full justify-center" style={{ backgroundColor: 'rgba(49, 49, 51, 1)' }}>
+                <p className="text-sm text-kuduGray">Copyright © 2024 Kudu.com. All rights reserved</p>
             </div>
         </footer>
     );

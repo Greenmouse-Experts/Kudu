@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SearchSection() {
     return (
-        <div className="relative w-full lg:min-h-[500px] h-[200px] lg:py-10 md:py-10 py-4 lg:mt-10 md:mt-10 mt-14 bg-black">
+        <div className="relative w-full lg:min-h-[500px] md:min-h-[400px] h-[200px] lg:py-10 md:py-10 py-4 lg:mt-10 md:mt-10 mt-14 bg-black">
             <Image
                 src="/images/shoppingBag.png"
                 alt="Background image"

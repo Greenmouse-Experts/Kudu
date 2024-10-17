@@ -36,16 +36,19 @@ export default function PopularCategories() {
                         SEE ALL
                     </p>
                 </div>
-                <div className="flex w-full lg:gap-7 md:gap-6 gap-2 flex-wrap">
+                <div className="grid w-full lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
                     {categoriesArr.map((category, index) => (
                         <div className="flex flex-col gap-4 py-6 lg:px-14 md:px-14 px-8 items-center bg-white rounded-lg shadow-sm" key={index}>
                             <span className="lg:h-[110px] h-[100px]">
                                 <Image src={category.photo} width={100} height={114} alt={category.name} />
                             </span>
-                            <p className="lg:text-base md:text-base text-[13px] font-semibold uppercase text-black">{category.name}</p>
+                            <p className="lg:text-base md:text-base text-[13px] font-semibold uppercase text-black">
+                                {category.name}
+                            </p>
                         </div>
                     ))}
                 </div>
+
             </div>
         </>
     )

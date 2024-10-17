@@ -15,13 +15,13 @@ export default function Home() {
       <div className="w-full flex flex-col">
         <Header />
         <SearchSection />
-        <div className="w-full flex flex-col lg:px-40 md:px-40 py-3 lg:gap-10 md:gap-10 gap-7 bg-kuduLightBlue h-full">
+        <div className="w-full flex flex-col lg:px-44 md:px-4 px-5 py-3 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
           <div className="w-full lg:flex md:flex hidden gap-3 mt-3">
             <CategorySection />
             <DealsSection />
             <PostSection />
           </div>
-          <div className="w-full flex px-3">
+          <div className="w-full flex">
             <PopularCategories />
           </div>
           <div className="w-full flex">
@@ -35,9 +35,6 @@ export default function Home() {
           </div>
         </div>
         <Footer />
-          <div className="py-5 flex w-full justify-center" style={{ backgroundColor: 'rgba(49, 49, 51, 1)' }}>
-            <p className="text-sm text-kuduGray">Copyright © 2024 Kudu.com. All rights reserved</p>
-          </div>
       </div>
     </>
   );
