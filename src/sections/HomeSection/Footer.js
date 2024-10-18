@@ -55,7 +55,7 @@ const Footer = () => {
                     <span><a href="#" className="text-gray-400">FAQs</a></span>
                 </div>
                 <div className="absolute lg:-left-[20%] lg:w-[120%] w-full h-[470px] bg-black py-20 lg:flex md:flex sm:hidden xs:hidden flex-col lg:px-48 xl:px-48 clip-diagonal">
-                    <div className="flex justify-between lg:ml-40 xl:ml-48 w-full lg:px-20 xl:px-48 px-10">
+                    <div className="flex justify-between lg:ml-40 w-full lg:px-20 xl:px-24 px-10">
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Buy</h3>
                             <ul className="space-y-3">
