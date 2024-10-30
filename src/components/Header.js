@@ -21,7 +21,7 @@ export default function Header() {
                         src="/images/kudum1.png"
                         alt="Kudu Logo"
                         width={165}
-                        height={108}
+                        height={67}
                         className="mr-2"
                     />
                 </div>

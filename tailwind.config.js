@@ -19,6 +19,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         kuduOrange: "rgba(255, 111, 34, 1)",
+        kuduOrangeFade: "rgba(255, 111, 34, 0.7)",
         kuduGray: "rgba(141, 141, 141, 1)",
         kuduLightBlue: "rgba(241, 241, 242, 1)",
         kuduOrange500: "rgba(255, 133, 86, 1)",
@@ -28,7 +29,9 @@ module.exports = {
         kuduSkyBlue: "rgba(198, 229, 250, 1)",
         kuduGreen: "rgba(52, 168, 83, 1)",
         kuduRed: "rgba(255, 15, 0, 1)",
-        kuduDarkGrey: "rgba(57, 57, 57, 1)"
+        kuduDarkGrey: "rgba(57, 57, 57, 1)",
+        kuduLightGray: "rgba(246, 247, 251, 1)",
+        kuduTableGrey: "rgba(246, 247, 251, 1)"
       },
       backgroundImage: {
         'custom-bg': "url('/images/signInBg.png')",
