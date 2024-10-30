@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="bg-kuduOrange text-white relative w-full">
             <div className="relative bg-kuduOrange lg:min-h-[660px] h-full">
-                <div className="w-full flex py-10 justify-between items-center lg:pl-36 xl:pl-44 lg:pr-36 xl:pr-36 lg:flex-row md:flex-row flex-col px-10 gap-14 xl:gap-48">
+                <div className="w-full flex py-10 justify-between items-center lg:px-44 xl:px-80 lg:flex-row md:flex-row flex-col px-10 gap-20 xl:gap-48">
                     <div className="md:flex xl:w-1/4 md:w-1/4 flex-grow hidden">
                         <Image src={'/images/kudu1.png'} alt="kudu logo" width={150} height={50} />
                     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex xl:w-1/3 sm:justify-center xs:justify-center">
+                    <div className="flex xl:w-1/3 justify-center sm:justify-center xs:justify-center">
                         <div className="flex w-full flex-col gap-2">
                             <p className="text-white text-base font-semibold md:px-6 lg:px-0 xl:px-0 lg:text-left md:text-left xs:text-center">
                                 Stay Updated
@@ -38,8 +38,8 @@ const Footer = () => {
                                 Subscribe to Our Newsletter
                             </p>
                             <div className="flex items-center gap-5 lg:gap-3 md:px-6 lg:px-0 xl:px-0 xl:justify-end w-full mt-3">
-                                <Image src={'/images/google_play.png'} width={120} height={50} alt="google_play" />
-                                <Image src={'/images/apple_playstore.png'} width={120} height={50} alt="google_play" />
+                                <Image src={'/images/google_play.png'} width={130} height={50} alt="google_play" />
+                                <Image src={'/images/apple_playstore.png'} width={130} height={50} alt="google_play" />
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                     <span><a href="#" className="text-gray-400">FAQs</a></span>
                 </div>
                 <div className="absolute lg:-left-[20%] lg:w-[120%] w-full h-[470px] bg-black py-16 lg:flex md:flex sm:hidden xs:hidden flex-col lg:px-48 xl:px-48 clip-diagonal">
-                    <div className="flex justify-between lg:ml-40 w-full lg:pl-24 xl:pl-24 lg:pr-28 px-10">
+                    <div className="flex justify-between lg:w-[85%] xl:w-[80%] lg:justify-start xl:justify-between lg:gap-28 w-full xl:px-32 relative px-10 lg:px-0 lg:left-[20%]">
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Buy</h3>
                             <ul className="space-y-3 text-sm">
@@ -102,7 +102,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="mt-4 py-2 lg:ml-40 lg:px-20 w-full px-10 flex flex-col gap-4">
+                    <div className="mt-4 py-2 lg:left-[20%] relative lg:px-0 lg:w-[85%] xl:w-[80%] xl:px-32 w-full px-10 flex flex-col gap-4">
                         <div className="w-full h-[1px] border-t border-gray-700 my-3" />
                         <div className="flex w-full my-3">
                             <div className="flex flex-grow">

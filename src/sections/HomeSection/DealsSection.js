@@ -10,7 +10,8 @@ export default function DealsSection() {
                     <Image src={'/images/phone-section.png'}
                         width={900}
                         height={1200}
-                        alt="phone_slider"                        
+                        alt="phone_slider"  
+                        style={{ width: '100%' }}
                     />
                 </div>
             </div>

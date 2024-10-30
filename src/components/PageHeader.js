@@ -14,7 +14,7 @@ export default function PageHeader() {
 
     return (
         <div className="bg-kuduOrange shadow-md fixed w-full z-50 py-2 lg:py-0 md:py-0">
-            <div className="w-full flex items-center justify-between lg:pl-36 lg:pr-36 md:px-4 px-5">
+            <div className="w-full flex items-center justify-between xl:px-80 lg:px-36 md:px-4 px-5">
                 {/* Logo Section */}
                 <div className="lg:flex md:flex hidden py-3">
                     <Link href={'/'}>
