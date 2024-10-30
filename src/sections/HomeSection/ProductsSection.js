@@ -135,8 +135,8 @@ export default function ProductsSection() {
 
                 <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
                     {productsArr.slice(5, 10).map((product, index) => (
-                        <Link href={'/product'}>
-                            <div className="flex flex-col gap-4" key={index}>
+                        <Link href={'/product'} key={index}>
+                            <div className="flex flex-col gap-4">
                                 <div className="flex justify-center relative h-[200px]">
                                     <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
                                     <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
