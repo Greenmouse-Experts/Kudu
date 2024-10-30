@@ -8,7 +8,7 @@ export default function VendorLogin() {
         <>
             <div className="w-full flex flex-col">
                 <PageHeader />
-                <div className="w-full flex flex-col lg:px-36 md:px-4 px-5 py-3 lg:pt-24 md:pt-20 md:pb-20 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
+                <div className="w-full flex flex-col xl:px-80 lg:px-36 md:px-4 px-5 py-3 lg:pt-24 md:pt-20 md:pb-20 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
 
                     <div className="w-full flex flex-col gap-2 md:mt-10 mt-20">
                         <div className="w-full flex justify-center">
