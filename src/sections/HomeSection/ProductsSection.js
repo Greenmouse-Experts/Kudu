@@ -1,108 +1,87 @@
 "use client";
 
+import Badge from "@/components/Badge";
 import Image from "next/image";
 
 export default function ProductsSection() {
     const productsArr = [
         {
-            photo: "/images/iphone.png",
+            photo: "/images/clothProduct.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Used",
         },
         {
-            photo: "/images/tv3D.png",
+            photo: "/images/television.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/headset.png",
+            photo: "/images/sneakers.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/shoe.png",
+            photo: "/images/toyota.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/tv3D.png",
+            photo: "/images/sneakers_shoe.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/iphone.png",
+            photo: "/images/clothProduct.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Used",
         },
         {
-            photo: "/images/tv3D.png",
+            photo: "/images/television.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/headset.png",
+            photo: "/images/sneakers.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/shoe.png",
+            photo: "/images/toyota.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
         {
-            photo: "/images/tv3D.png",
+            photo: "/images/sneakers_shoe.png",
             title: "85 inch Oled Television",
-            price: "₦ 63,500"
+            price: "₦ 63,500",
+            status: "Brand New"
         },
-        {
-            photo: "/images/iphone.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/tv3D.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/iphone.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/tv3D.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/headset.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/shoe.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/tv3D.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        },
-        {
-            photo: "/images/iphone.png",
-            title: "85 inch Oled Television",
-            price: "₦ 63,500"
-        }
     ]
     return (
         <>
             <div className="flex flex-col gap-5 w-full">
-                <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
-                    {productsArr.slice(0, 10).map((product, index) => (
+                <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-14 bg-white p-3 shadow-sm">
+                    {productsArr.slice(0, 5).map((product, index) => (
                         <div className="flex flex-col gap-4" key={index}>
-                            <div className="p-4 flex justify-center bg-kuduGrayPeach">
-                                <Image src={product.photo} width={130} height={130} alt={product.title} />
+                            <div className="flex justify-center relative h-[200px]">
+                                <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
+                                <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
+                                    <Image src={'/images/tag.svg'} width={13} height={13} />
+                                </span>
+                                <span className="absolute top-1 right-1">
+                                    <Badge bgColor={product.status === 'Brand New' ? 'bg-kuduGreen' : 'bg-kuduRed'} text={product.status}
+                                        textColor={'text-white'}
+                                    />
+                                </span>
                             </div>
                             <div className="flex flex-col gap-3">
                                 <p className="text-xs font-semibold">
@@ -115,7 +94,7 @@ export default function ProductsSection() {
                         </div>
                     ))}
                 </div>
-                <div className="flex w-full gap-8">
+                <div className="flex w-full gap-4">
                     <div className="bg-kuduDarkBlue md:w-1/2 flex w-full py-2 px-4 lg:rounded-lg md:rounded-lg">
                         <div className="flex flex-col flex-grow gap-2 py-3">
                             <h2 className="md:text-2xl text-base font-semibold text-white">Boost Leads for Your Business</h2>
@@ -154,10 +133,18 @@ export default function ProductsSection() {
                 </div>
 
                 <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
-                    {productsArr.slice(10, 15).map((product, index) => (
-                        <div className="flex flex-col gap-4 w-full" key={index}>
-                            <div className="p-4 flex justify-center bg-kuduGrayPeach w-full">
-                                <Image src={product.photo} width={130} height={130} alt={product.title} />
+                    {productsArr.slice(5, 10).map((product, index) => (
+                        <div className="flex flex-col gap-4" key={index}>
+                            <div className="flex justify-center relative h-[200px]">
+                                <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
+                                <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
+                                    <Image src={'/images/tag.svg'} width={13} height={13} />
+                                </span>
+                                <span className="absolute top-1 right-1">
+                                    <Badge bgColor={product.status === 'Brand New' ? 'bg-kuduGreen' : 'bg-kuduRed'} text={product.status}
+                                        textColor={'text-white'}
+                                    />
+                                </span>
                             </div>
                             <div className="flex flex-col gap-3">
                                 <p className="text-xs font-semibold">

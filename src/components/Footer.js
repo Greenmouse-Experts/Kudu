@@ -6,10 +6,10 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <footer className="bg-kuduOrange text-white relative w-full">
-            <div className="relative bg-kuduOrange lg:min-h-[740px] h-full">
-                <div className="w-full flex py-20 justify-between items-center lg:px-44 xl:px-44 lg:flex-row md:flex-row flex-col px-10 gap-14 xl:gap-48">
+            <div className="relative bg-kuduOrange lg:min-h-[660px] h-full">
+                <div className="w-full flex py-10 justify-between items-center lg:pl-44 xl:pl-44 lg:pr-36 xl:pr-36 lg:flex-row md:flex-row flex-col px-10 gap-14 xl:gap-48">
                     <div className="md:flex xl:w-1/4 md:w-1/4 flex-grow hidden">
-                        <Image src={'/images/kudu1.png'} width={150} height={50} />
+                        <Image src={'/images/kudu1.png'} alt="kudu logo" width={150} height={50} />
                     </div>
                     <div className="flex xl:w-1/2 lg:w-2/5 md:w-1/2 xs:w-full flex-grow justify-center">
                         <div className="flex w-full flex-col gap-2">
@@ -54,8 +54,8 @@ const Footer = () => {
                     <span><a href="#" className="text-gray-400">Chat with Us</a></span>
                     <span><a href="#" className="text-gray-400">FAQs</a></span>
                 </div>
-                <div className="absolute lg:-left-[20%] lg:w-[120%] w-full h-[470px] bg-black py-20 lg:flex md:flex sm:hidden xs:hidden flex-col lg:px-48 xl:px-48 clip-diagonal">
-                    <div className="flex justify-between lg:ml-40 w-full lg:px-20 xl:px-24 px-10">
+                <div className="absolute lg:-left-[20%] lg:w-[120%] w-full h-[470px] bg-black py-16 lg:flex md:flex sm:hidden xs:hidden flex-col lg:px-48 xl:px-48 clip-diagonal">
+                    <div className="flex justify-between lg:ml-40 w-full lg:pl-24 xl:pl-24 lg:pr-28 px-10">
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Buy</h3>
                             <ul className="space-y-3">
