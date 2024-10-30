@@ -9,13 +9,13 @@ export default function Login() {
                 <div className='py-10 lg:px-20 md:px-20 flex flex-col gap-4'>
                     <p className="text-3xl font-bold mb-6 text-gray-800">Sign In</p>
                     <div className="mb-4">
-                        <label className="block text-gray-700 font-semibold mb-2" htmlFor="email">
+                        <label className="block text-sm font-semibold mb-2" htmlFor="email">
                             Email address
                         </label>
                         <Input placeholder="Your email address" />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-gray-700 font-semibold mb-2" htmlFor="password">
+                        <label className="block text-sm font-semibold mb-2" htmlFor="password">
                             Password
                         </label>
                         <Input appendIcon="eye-password.png" type="password" placeholder="Password" />

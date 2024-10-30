@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="bg-kuduOrange text-white relative w-full">
             <div className="relative bg-kuduOrange lg:min-h-[660px] h-full">
-                <div className="w-full flex py-10 justify-between items-center lg:pl-44 xl:pl-44 lg:pr-36 xl:pr-36 lg:flex-row md:flex-row flex-col px-10 gap-14 xl:gap-48">
+                <div className="w-full flex py-10 justify-between items-center lg:pl-36 xl:pl-44 lg:pr-36 xl:pr-36 lg:flex-row md:flex-row flex-col px-10 gap-14 xl:gap-48">
                     <div className="md:flex xl:w-1/4 md:w-1/4 flex-grow hidden">
                         <Image src={'/images/kudu1.png'} alt="kudu logo" width={150} height={50} />
                     </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                     <div className="flex justify-between lg:ml-40 w-full lg:pl-24 xl:pl-24 lg:pr-28 px-10">
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Buy</h3>
-                            <ul className="space-y-3">
+                            <ul className="space-y-3 text-sm">
                                 <li><a href="#" className="text-gray-400">Registration</a></li>
                                 <li><a href="#" className="text-gray-400">Payment</a></li>
                                 <li><a href="#" className="text-gray-400">Delivery</a></li>
@@ -67,7 +67,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Sell</h3>
-                            <ul className="space-y-3">
+                            <ul className="space-y-3 text-sm">
                                 <li><a href="#" className="text-gray-400">Become a Vendor</a></li>
                                 <li><a href="#" className="text-gray-400">Kudu Deliveries</a></li>
                                 <li><a href="#" className="text-gray-400">Flash Sales</a></li>
@@ -76,7 +76,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Useful Links</h3>
-                            <ul className="space-y-3">
+                            <ul className="space-y-3 text-sm">
                                 <li><a href="#" className="text-gray-400">About Us</a></li>
                                 <li><a href="#" className="text-gray-400">Contact Us</a></li>
                                 <li><a href="#" className="text-gray-400">Privacy Policy</a></li>
@@ -86,7 +86,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Support</h3>
-                            <ul className="space-y-3">
+                            <ul className="space-y-3 text-sm">
                                 <li><a href="#" className="text-gray-400">Help Center</a></li>
                                 <li><a href="#" className="text-gray-400">Chat with Us</a></li>
                                 <li><a href="#" className="text-gray-400">FAQs</a></li>
@@ -94,7 +94,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col space-y-2">
                             <h3 className="text-lg font-semibold">Reach Out</h3>
-                            <ul className="space-y-3">
+                            <ul className="space-y-3 text-sm">
                                 <li><a href="#" className="text-gray-400">+234 000 000 0000</a></li>
                                 <li><a href="#" className="text-gray-400">help@kudu.com</a></li>
                                 <li><a href="#" className="text-gray-400">support@kudu.com</a></li>
