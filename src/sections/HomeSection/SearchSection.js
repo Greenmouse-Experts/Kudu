@@ -31,7 +31,7 @@ export default function SearchSection() {
                 </p>
 
                 {/* Search Bar */}
-                <div className="flex w-full sm:w-10/12 md:w-8/12 lg:w-8/12 relative justify-center">
+                <div className="flex w-full sm:w-10/12 md:w-7/12 relative justify-center">
                     <span className="absolute lg:block md:block hidden" style={{ top: '-85%', right: '-15%' }}>
                         <Image
                             src="/images/kudu-circle.gif"

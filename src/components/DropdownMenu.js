@@ -16,7 +16,7 @@ const DropdownMenu = ({ buttonLabel, children, btnClass, color }) => {
                 onClick={toggleDropdown}
                 className={btnClass}
             >
-                <span className='flex text-sm'>{buttonLabel}</span>
+                <span className='flex text-[13px]'>{buttonLabel}</span>
                 <span className='flex flex-col h-full justify-center items-center -pt-[0.1rem]'>
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0.617188L5 9.61719L10 0.617188H0Z" fill={color} />
