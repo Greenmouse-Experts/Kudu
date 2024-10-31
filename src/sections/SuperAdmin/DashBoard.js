@@ -54,7 +54,7 @@ export default function Dashboard() {
         <>
             <div className="w-full flex h-full animate__animated animate__fadeIn">
                 <div className="md:hidden flex">
-                    <Header />
+                    <Header module="superAdmin" />
                 </div>
                 <div className="w-full flex flex-col gap-5 h-full">
                     <Greeting />
