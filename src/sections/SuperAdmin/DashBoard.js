@@ -4,6 +4,7 @@ import Greeting from "./layouts/Greetings";
 import UserAnalysis from "./layouts/UserAnalysis";
 import Badge from "@/components/Badge";
 import SalesAnalytics from "./layouts/SalesAnalytics";
+import Header from "@/components/Header";
 
 export default function Dashboard() {
     const TableHeaders = ["Name", "Items Posted", "Date", "Action"];
@@ -52,6 +53,9 @@ export default function Dashboard() {
     return (
         <>
             <div className="w-full flex h-full animate__animated animate__fadeIn">
+                <div className="md:hidden flex">
+                    <Header />
+                </div>
                 <div className="w-full flex flex-col gap-5 h-full">
                     <Greeting />
                     <div className="w-full flex lg:flex-row md:flex-row flex-col h-full gap-5 my-2 md:px-0 px-3">

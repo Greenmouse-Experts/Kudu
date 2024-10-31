@@ -1,6 +1,6 @@
 function Greeting() {
     return (
-        <div className="bg-gradient-to-r from-orange-500 to-black-900 text-white px-4 py-10 mt-3 rounded-lg w-full">
+        <div className="bg-gradient-to-r from-orange-500 to-black-900 text-white px-4 py-10 md:mt-3 mt-16 rounded-lg w-full">
             <div className="flex gap-6">
                 <div className="flex flex-grow gap-1">
                     <h2 className="text-lg">Hello, Admin</h2>
