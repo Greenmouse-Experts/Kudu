@@ -17,7 +17,7 @@ export default function PostSection() {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full md:h-[327px] xl:h-[435px] relative">
+                <div className="flex w-full md:h-[329px] xl:h-[443px] relative">
                     <Image src={'/images/smart_phone_ad.png'} width={300} height={100}
                         style={{ height: '100%', width: '100%', objectFit: 'cover'}}
                         alt="smart_ad"

@@ -76,7 +76,7 @@ export default function ProductsSection() {
                             <div className="flex justify-center relative h-[200px]">
                                 <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
                                 <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
-                                    <Image src={'/images/tag.svg'} width={13} height={13} />
+                                    <Image src={'/images/tag.svg'} alt="tag" width={13} height={13} />
                                 </span>
                                 <span className="absolute top-1 right-1">
                                     <Badge bgColor={product.status === 'Brand New' ? 'bg-kuduGreen' : 'bg-kuduRed'} text={product.status}
@@ -140,7 +140,7 @@ export default function ProductsSection() {
                                 <div className="flex justify-center relative h-[200px]">
                                     <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
                                     <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
-                                        <Image src={'/images/tag.svg'} width={13} height={13} />
+                                        <Image src={'/images/tag.svg'} alt="tag" width={13} height={13} />
                                     </span>
                                     <span className="absolute top-1 right-1">
                                         <Badge bgColor={product.status === 'Brand New' ? 'bg-kuduGreen' : 'bg-kuduRed'} text={product.status}

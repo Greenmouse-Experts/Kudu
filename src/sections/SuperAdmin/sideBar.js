@@ -7,13 +7,15 @@ import { usePathname } from "next/navigation";
 export default function Sidebar({ mobile }) {
 
     const pathname = usePathname();
-    
+
     return (
         <div className={`h-full bg-white rounded-md flex-col ${mobile ? 'w-full lg:hidden md:hidden flex overflow-auto' : 'md:w-[22%] lg:flex md:hidden hidden custom-scrollbar overflow-auto h-[650px] fixed'} bg-mobiDarkCloud transition-all mb-10`}>
             {/* Logo */}
             <div className="py-6 px-4 flex gap-2 flex-col space-x-2 border-bottom">
                 <div className='flex px-3 justify-center'>
-                    <img src="/images/kudum1.png" alt="Logo" className="w-[160px]" />
+                    <Link href={'/'}>
+                        <img src="/images/kudum1.png" alt="Logo" className="w-[160px]" />
+                    </Link>
                 </div>
                 <div className='w-full h-[1px] border-mobiSilverDivider border-bottom border'></div>
             </div>
@@ -107,7 +109,7 @@ export default function Sidebar({ mobile }) {
                 </Link>
                 <a href="#" className={`flex items-center py-2 px-4 h-[57px] rounded-lg text-red-500 hover:bg-kuduLightGray  transition`}>
                     <i className="fas fa-sign-out-alt mr-3"></i>
-                   <span className="text-sm font-[500]">Logout</span>
+                    <span className="text-sm font-[500]">Logout</span>
                 </a>
             </div>
         </div>
