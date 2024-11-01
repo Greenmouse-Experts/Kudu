@@ -14,7 +14,7 @@ export default function SearchSection() {
     const [selectedUseType, setType] = useState("Use Types");
 
     return (
-        <div className="relative w-full lg:min-h-[500px] md:min-h-[400px] h-[200px] lg:py-10 md:py-10 py-4 lg:mt-10 md:mt-10 mt-14 bg-black">
+        <div className="relative w-full lg:min-h-[500px] md:min-h-[400px] h-[250px] lg:py-10 md:py-10 py-4 lg:mt-10 md:mt-10 mt-14 bg-black">
             <Image
                 src="/images/shoppingBag.png"
                 alt="Background image"
@@ -45,7 +45,7 @@ export default function SearchSection() {
                         <div className="flex items-center bg-white rounded-lg overflow-hidden shadow-lg w-full">
                             <input
                                 type="text"
-                                className="md:w-3/5 w-full px-4 py-2 rounded-lg md:px-6 md:py-4 outline-none text-[13px] md:text-lg text-gray-700"
+                                className="md:w-3/5 w-full px-4 py-3 rounded-lg md:px-6 md:py-4 outline-none text-[13px] md:text-lg text-gray-700"
                                 placeholder="Find anything on Kudu..."
                                 style={{ fontSize: '13px' }}
                             />
@@ -61,19 +61,57 @@ export default function SearchSection() {
                                 </div>
                                 <div className="flex w-full">
                                     <DropdownMenu buttonLabel={selectedUseType} color={'#FFF'} btnClass="inline-flex justify-center text-white w-full px-4 h-full py-3 gap-3 rounded-md font-medium bg-kuduOrangeFade">
-                                            <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer">
+                                        <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                                        onClick={() => setType('Brand New')}>
                                                 Brand New
                                         </span> 
-                                        <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer">
+                                        <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                                            onClick={() => setType('Refurbished')}
+                                        >
                                             Refurbished
                                         </span> 
-                                        <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer">
+                                        <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                                            onClick={() => setType('Used')}
+                                        >
                                             Used
                                         </span> 
                                     </DropdownMenu>
                                 </div>
                             </div>
                         </div>
+
+                        {/** For Mobile Screen */}
+                        <div className="w-full flex md:hidden gap-3">
+                            <div className="w-full flex">
+                                <DropdownMenu buttonLabel={selectedCategory} color={'#000'} btnClass="inline-flex justify-center w-full px-4 h-full py-3 gap-3 rounded-md font-medium bg-gray-300">
+                                    {arrCategories.map((category, index) => (
+                                        <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer" onClick={() => setCategory(category)} key={index}>
+                                            {category}
+                                        </span>
+                                    ))}
+                                </DropdownMenu>
+                            </div>
+                            <div className="flex w-full">
+                                <DropdownMenu buttonLabel={selectedUseType} color={'#FFF'} btnClass="inline-flex justify-center text-white w-full px-4 h-full py-3 gap-3 rounded-md font-medium bg-kuduOrangeFade">
+                                    <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                                        onClick={() => setType('Brand New')}>
+                                        Brand New
+                                    </span>
+                                    <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                                        onClick={() => setType('Refurbished')}
+                                    >
+                                        Refurbished
+                                    </span>
+                                    <span className="block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                                        onClick={() => setType('Used')}
+                                    >
+                                        Used
+                                    </span>
+                                </DropdownMenu>
+                            </div>
+                        </div>
+
+
                         <div className="flex justify-center w-full">
                             <button className="bg-orange-500 text-white text-base px-4 py-2 lg:w-1/5 md:w-1/5 w-1/3 md:px-6 md:py-3 rounded-md hover:bg-orange-600 transition duration-300">
                                 Search
