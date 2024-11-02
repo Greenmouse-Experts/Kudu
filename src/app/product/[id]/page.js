@@ -97,7 +97,7 @@ export default function ViewProduct() {
                                                     <span className="text-sm text-kuduRomanSilver uppercase">
                                                         Gender
                                                     </span>
-                                                    <span className="text-sm font-bold">Men's</span>
+                                                    <span className="text-sm font-bold">Men&apos;s</span>
                                                 </div>
                                             </div>
 
@@ -249,8 +249,8 @@ export default function ViewProduct() {
                                     <p className="text-lg font-bold">Safety Tips</p>
                                     <ul className="text-xs font-[500] md:px-4 flex flex-col gap-2" style={{ listStyle: 'disc' }}>
                                         <li>Meet with the seller at a safe public place.</li>
-                                        <li>Inspect the item and ensure it's exactly what you want</li>
-                                        <li>Make sure that the packed item is the one you've inspected</li>
+                                        <li>Inspect the item and ensure it&apos;s exactly what you want</li>
+                                        <li>Make sure that the packed item is the one you&apos;ve inspected</li>
                                     </ul>
                                 </div>
 
