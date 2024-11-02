@@ -16,7 +16,7 @@ export default function Header({module}) {
     };
 
     return (
-        <div className="bg-white shadow-md fixed w-full z-50 py-2 lg:py-0 md:py-0">
+        <div className="bg-white shadow-md fixed w-full z-[90] py-2 lg:py-0 md:py-0">
             <div className="w-full flex items-center justify-between xl:px-80 lg:px-36 md:px-4 px-5">
                 {/* Logo Section */}
                 <div className="lg:flex md:flex hidden">
@@ -88,7 +88,7 @@ export default function Header({module}) {
                         <Sidebar mobile />
                     }
                     {
-                        module === 'vendor' &&
+                        module === 'vendors' &&
                         <VendorSideBar mobile />
                     }
                 </Drawer>

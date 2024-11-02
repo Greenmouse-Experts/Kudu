@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
-// const withMT = require("@material-tailwind/react/utils/withMT");
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-module.exports = {
+module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -34,7 +34,8 @@ module.exports = {
         kuduRed: "rgba(255, 15, 0, 1)",
         kuduDarkGrey: "rgba(57, 57, 57, 1)",
         kuduLightGray: "rgba(246, 247, 251, 1)",
-        kuduTableGrey: "rgba(246, 247, 251, 1)"
+        kuduTableGrey: "rgba(246, 247, 251, 1)",
+        kuduRomanSilver: "rgba(114, 112, 112, 1)"
       },
       backgroundImage: {
         'custom-bg': "url('/images/signInBg.png')",
@@ -43,4 +44,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+});
