@@ -12,13 +12,13 @@ export default function Login() {
                         <label className="block text-sm font-semibold mb-2" htmlFor="email">
                             Email address
                         </label>
-                        <Input placeholder="Your email address" />
+                        <Input placeholder="Your email address" background="bg-kuduDarkFade border-transparent" class="px-3 placeholder-black py-3" />
                     </div>
                     <div className="mb-4">
                         <label className="block text-sm font-semibold mb-2" htmlFor="password">
                             Password
                         </label>
-                        <Input appendIcon="eye-password.png" type="password" placeholder="Password" />
+                        <Input appendIcon="eye-password.png" background="bg-kuduDarkFade" class="px-3 placeholder-black py-3" type="password" placeholder="Password" />
                     </div>
                     <div className="flex justify-between items-center mb-4">
                         <a href="#" className="text-sm text-blue-500 hover:underline">
