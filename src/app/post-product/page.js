@@ -6,6 +6,7 @@ import Dropzone from "@/components/DropZone";
 import { useState } from "react";
 import { City, Country, State } from "country-state-city";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function PostProduct() {
     const options = [
@@ -143,6 +144,7 @@ export default function PostProduct() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
     )

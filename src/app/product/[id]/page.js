@@ -1,7 +1,7 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Avatar } from "@material-tailwind/react";
 import Image from "next/image";
 
 export default function ViewProduct() {
@@ -192,7 +192,7 @@ export default function ViewProduct() {
                                 <div className="w-full flex flex-col gap-3 py-5 md:px-8 px-4 rounded-md bg-white shadow shadow-md">
                                     <div className="flex gap-2">
                                         <div className="flex">
-                                            <Avatar src="/images/profile_icon.png" alt="avatar" />
+                                            <Image src="/images/profile_icon.png" alt="avatar" width={160} height={160} className="w-[50px] h-[50px] rounded-full object-fit-cover" />
                                         </div>
                                         <div className="flex flex-col justify-center gap-1">
                                             <span className="text-lg font-bold">
@@ -260,6 +260,8 @@ export default function ViewProduct() {
                         </div>
                     </div>
                 </div>
+
+                <Footer />
             </div>
         </>
     )
