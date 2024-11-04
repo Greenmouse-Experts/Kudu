@@ -9,7 +9,7 @@ export default function ViewProduct() {
     return (
         <>
             <div className="w-full flex flex-col">
-                <Header />
+                <Header module={'home'} />
                 <div className="w-full flex flex-col h-full xl:px-80 lg:pl-40 lg:pr-36 md:px-4 px-5 py-3 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
                     <div className="w-full flex flex-col gap-4">
                         <div className="w-full py-3 flex md:mt-20 mt-14 gap-3">

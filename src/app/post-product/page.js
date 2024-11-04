@@ -61,7 +61,7 @@ export default function PostProduct() {
     return (
         <>
             <div className="w-full flex flex-col h-full bg-kuduLightBlue">
-                <Header />
+                <Header module='home' />
                 <div className="w-full flex flex-col h-full xl:px-80 lg:pl-40 lg:pr-36 md:px-4 px-5 py-3 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
                     <div className="w-full flex flex-col gap-4">
                         <div className="w-full py-3 px-28 flex flex-col md:mt-20 mt-14 gap-8">

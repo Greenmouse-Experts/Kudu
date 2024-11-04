@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Drawer from './Drawer';
 import Sidebar from '@/sections/SuperAdmin/sideBar';
 import VendorSideBar from '@/sections/VendorSection/sideBar';
+import HomeSidebar from '@/sections/HomeSection/SideBar';
 
 export default function Header({module}) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -84,6 +85,10 @@ export default function Header({module}) {
                 </div>
 
                 <Drawer isOpen={isMenuOpen} onClose={toggleMenu} position="left">
+                    {
+                        module === 'home' &&
+                        <HomeSidebar mobile />
+                    }
                     {module === 'superAdmin' &&
                         <Sidebar mobile />
                     }
