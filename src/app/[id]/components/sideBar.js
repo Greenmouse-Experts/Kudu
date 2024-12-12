@@ -23,7 +23,7 @@ const ProfileSideBar = () => {
             {/* Alerts Section */}
             <div className="mt-4 bg-kuduOrange px-4 w-full py-2 rounded-lg">
                 <div className="flex justify-between items-center text-white">
-                    <span>Alerts</span>
+                    <span className="text-sm">Alerts</span>
                 </div>
                 <div className="flex items-center justify-between bg-white px-2 py-2 rounded-lg">
                     <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
