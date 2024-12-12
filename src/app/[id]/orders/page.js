@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
-import ProfileSideBar from "./components/sideBar";
+import ProfileSideBar from "./components/ProfileSideBar";
 import RecentViewedProducts from "@/components/RecentViewedProducts";
 import Footer from "@/components/Footer";
 import ProfileOrders from "../modules/orders";
