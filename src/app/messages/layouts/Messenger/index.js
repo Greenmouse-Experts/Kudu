@@ -5,7 +5,7 @@ import ChatInterface from "./chatBody";
 export default function Messenger() {
     return (
         <>
-            <div className="w-full flex justify-between md:shadow-lg py-5 px-6 gap-10 rounded-md">
+            <div className="w-full flex justify-between md:shadow-lg md:py-5 py-3 bg-white px-6 gap-10 rounded-t-md">
                 <div className="md:w-[32%] w-full h-full flex justify-between items-center">
                     <span className="md:text-lg text-base font-semibold flex flex-grow">MESSAGES</span>
                     <span className="md:flex hidden">
@@ -23,7 +23,7 @@ export default function Messenger() {
                 </div>
             </div>
 
-            <div className="w-full flex md:flex-row flex-col gap-6 rounded-md max-h-[72vh]">
+            <div className="w-full flex md:flex-row flex-col md:gap-0 gap-4 rounded-md md:max-h-[72vh] h-full">
                 <ChatSideBar />
                 <ChatInterface />
             </div>

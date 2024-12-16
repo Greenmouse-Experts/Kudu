@@ -24,39 +24,39 @@ export default function ViewProduct() {
                         <div className="w-full flex md:flex-row flex-col gap-4">
                             <div className="lg:w-[65%] md:w-[55%] w-full flex flex-col gap-4">
                                 <div className="flex w-full">
-                                    <Image src={'/images/watches.png'} priority width={992} height={725} alt='main-product' className="rounded-md" />
+                                    <Image src={'/images/watches.png'} priority width={800} height={500} alt='main-product' className="rounded-md" />
                                 </div>
-                                <div className="flex w-full flex-wrap">
-                                    <div className="flex flex-wrap w-full gap-2">
+                                <div className="flex w-full overflow-x">
+                                    <div className="flex w-full gap-2">
                                         <Image
                                             src={'/images/watches-1.png'}
                                             priority
-                                            width={300}
-                                            height={300}
+                                            width={185}
+                                            height={100}
                                             alt="main-product"
                                             className="rounded-md w-[23%] sm:w-[24%] md:w-[24%] lg:w-[24%] h-auto max-h-[100px] object-cover"
                                         />
                                         <Image
                                             src={'/images/watches-2.png'}
                                             priority
-                                            width={300}
-                                            height={300}
+                                            width={185}
+                                            height={100}
                                             alt="main-product"
                                             className="rounded-md w-[23%] sm:w-[24%] md:w-[23.5%] lg:w-[24%] h-auto max-h-[100px] object-cover"
                                         />
                                         <Image
                                             src={'/images/watches-3.png'}
                                             priority
-                                            width={300}
-                                            height={300}
+                                            width={185}
+                                            height={100}
                                             alt="main-product"
                                             className="rounded-md w-[23%] sm:w-[24%] md:w-[23.5%] lg:w-[24%] h-auto max-h-[100px] object-cover"
                                         />
                                         <Image
                                             src={'/images/watches-4.png'}
                                             priority
-                                            width={300}
-                                            height={300}
+                                            width={185}
+                                            height={100}
                                             alt="main-product"
                                             className="rounded-md w-[23%] sm:w-[24%] md:w-[23.5%] lg:w-[24%] h-auto max-h-[100px] object-cover"
                                         />
@@ -192,7 +192,7 @@ export default function ViewProduct() {
                                 <div className="w-full flex flex-col gap-3 py-5 md:px-8 px-4 rounded-md bg-white shadow shadow-md">
                                     <div className="flex gap-2">
                                         <div className="flex">
-                                            <Image src="/images/profile_icon.png" alt="avatar" width={160} height={160} className="w-[50px] h-[50px] rounded-full object-fit-cover" />
+                                            <Image src="/images/profile_icon.png" alt="avatar" width={60} height={60} className="w-[50px] h-[50px] rounded-full object-fit-cover" />
                                         </div>
                                         <div className="flex flex-col justify-center gap-1">
                                             <span className="text-lg font-bold">
@@ -215,7 +215,7 @@ export default function ViewProduct() {
                                     </div>
                                     <button
                                         type="submit"
-                                        className="w-full py-2 px-4 flex justify-center gap-2 bg-kuduOrange text-white rounded-sm transition-colors"
+                                        className="w-full py-2 px-4 flex justify-center gap-2 bg-[rgba(66,133,244,1)] text-white rounded-md transition-colors"
                                     >
                                         <span className='flex mt-[2px]'>
                                             <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +231,7 @@ export default function ViewProduct() {
                                 <div className="w-full flex flex-col gap-3 py-5 md:px-8 px-4 rounded-md bg-white shadow shadow-md">
                                     <button
                                         type="submit"
-                                        className="w-full py-2 px-4 flex justify-center gap-2 border border-kuduOrange text-kuduOrange rounded-sm transition-colors"
+                                        className="w-full py-2 px-4 flex justify-center gap-2 border border-kuduOrange text-kuduOrange rounded-md transition-colors"
                                     >
                                         <span className="flex">
                                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,13 +247,28 @@ export default function ViewProduct() {
 
                                 <div className="w-full flex flex-col gap-3 py-5 md:px-8 px-8 rounded-md bg-white shadow shadow-md">
                                     <p className="text-lg font-bold">Safety Tips</p>
-                                    <ul className="text-xs font-[500] md:px-4 flex flex-col gap-2" style={{ listStyle: 'disc' }}>
+                                    <ul className="text-sm font-[500] md:px-4 flex flex-col gap-2" style={{ listStyle: 'disc' }}>
                                         <li>Meet with the seller at a safe public place.</li>
                                         <li>Inspect the item and ensure it&apos;s exactly what you want</li>
                                         <li>Make sure that the packed item is the one you&apos;ve inspected</li>
                                     </ul>
                                 </div>
 
+                                <div className="w-full flex flex-col gap-3 py-5 md:px-8 px-4 rounded-md bg-white shadow shadow-md">
+                                    <button
+                                        type="submit"
+                                        className="w-full py-3 px-4 flex justify-center rounded-md gap-3 bg-kuduOrange text-white transition-colors"
+                                    >
+                                        <span className='flex mt-[2px]'>
+                                            <svg width="20" height="18" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.8784 12.1081V18.3514C13.8784 18.5879 13.7845 18.8148 13.6172 18.982C13.4499 19.1493 13.2231 19.2433 12.9865 19.2433C12.75 19.2433 12.5231 19.1493 12.3559 18.982C12.1886 18.8148 12.0946 18.5879 12.0946 18.3514V12.1081C12.0946 11.8716 12.1886 11.6447 12.3559 11.4775C12.5231 11.3102 12.75 11.2162 12.9865 11.2162C13.2231 11.2162 13.4499 11.3102 13.6172 11.4775C13.7845 11.6447 13.8784 11.8716 13.8784 12.1081ZM17.9856 12.0189L17.3613 18.2622C17.3489 18.3791 17.3598 18.4972 17.3933 18.6099C17.4268 18.7226 17.4822 18.8275 17.5564 18.9187C17.6306 19.0099 17.7221 19.0855 17.8256 19.1412C17.9291 19.1969 18.0426 19.2316 18.1595 19.2433C18.1896 19.2449 18.2197 19.2449 18.2498 19.2433C18.4707 19.243 18.6837 19.1607 18.8474 19.0124C19.0112 18.8641 19.114 18.6604 19.1361 18.4406L19.7605 12.1973C19.7841 11.962 19.7133 11.7268 19.5636 11.5437C19.4139 11.3605 19.1976 11.2443 18.9622 11.2207C18.7269 11.197 18.4917 11.2678 18.3086 11.4175C18.1254 11.5672 18.0092 11.7836 17.9856 12.0189ZM7.98749 12.0189C7.96383 11.7836 7.84765 11.5672 7.6645 11.4175C7.48135 11.2678 7.24623 11.197 7.01087 11.2207C6.77551 11.2443 6.55918 11.3605 6.40948 11.5437C6.25978 11.7268 6.18897 11.962 6.21262 12.1973L6.83695 18.4406C6.85913 18.6613 6.96281 18.8659 7.12773 19.0143C7.29265 19.1627 7.50697 19.2444 7.72884 19.2433C7.75892 19.2449 7.78907 19.2449 7.81914 19.2433C7.93568 19.2315 8.04878 19.197 8.15196 19.1416C8.25515 19.0862 8.34641 19.011 8.42053 18.9203C8.49466 18.8296 8.55019 18.7252 8.58397 18.613C8.61775 18.5009 8.6291 18.3832 8.61739 18.2666L7.98749 12.0189ZM25.4652 8.65873L23.7851 21.2634C23.7265 21.6912 23.5153 22.0834 23.1904 22.3677C22.8654 22.6521 22.4487 22.8094 22.0169 22.8108H3.95614C3.52436 22.8094 3.10763 22.6521 2.78271 22.3677C2.45779 22.0834 2.24657 21.6912 2.18796 21.2634L0.507864 8.65873C0.491022 8.53274 0.501305 8.40461 0.538023 8.28291C0.574742 8.16122 0.637048 8.04878 0.720767 7.95314C0.804485 7.85749 0.907681 7.78084 1.02344 7.72833C1.1392 7.67582 1.26484 7.64866 1.39195 7.64866H6.3386L12.3176 0.817891C12.4013 0.722988 12.5043 0.64698 12.6196 0.594918C12.7349 0.542856 12.86 0.51593 12.9865 0.51593C13.1131 0.51593 13.2382 0.542856 13.3535 0.594918C13.4688 0.64698 13.5718 0.722988 13.6555 0.817891L19.6345 7.64866H24.5811C24.7082 7.64866 24.8339 7.67582 24.9496 7.72833C25.0654 7.78084 25.1686 7.85749 25.2523 7.95314C25.336 8.04878 25.3983 8.16122 25.4351 8.28291C25.4718 8.40461 25.4821 8.53274 25.4652 8.65873ZM8.70881 7.64866H17.2643L12.9865 2.75998L8.70881 7.64866ZM23.5621 9.43245H2.41094L3.95614 21.027H22.0169L23.5621 9.43245Z" fill="white" />
+                                            </svg>
+                                        </span>
+                                        <span className='flex'>
+                                            Add to Cart
+                                        </span>
+                                    </button>
+                                </div>
 
                             </div>
 

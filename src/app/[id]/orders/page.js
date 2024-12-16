@@ -2,7 +2,6 @@
 
 import Header from "@/components/Header";
 import ProfileSideBar from "../components/sideBar";
-import RecentViewedProducts from "@/components/RecentViewedProducts";
 import Footer from "@/components/Footer";
 import ProfileOrders from "../modules/orders";
 
@@ -19,11 +18,6 @@ export default function Orders() {
                         <div className="flex w-full md:w-[65%]">
                             <ProfileOrders />
                         </div>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-6 items-start mt-20">
-                        <p className="text-xl uppercase font-semibold">More Like this</p>
-                        <RecentViewedProducts />
                     </div>
                 </div>
 

@@ -13,14 +13,15 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => {
                             src={item.image}
                             alt={item.name}
                             priority
-                            width={96}
-                            height={96}
-                            className="w-24 h-24 object-cover rounded"
+                            width={200}
+                            height={200}
+                            className="rounded-md"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />
                         {/* Product Details */}
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-col gap-1 md:w-[90%]">
-                                <h2 className="font-bold text-lg">{item.name}</h2>
+                                <h2 className="font-bold md:text-lg text-base">{item.name}</h2>
                                 <div className="flex items-center gap-2 text-sm">
                                     <span className="py-1 px-2 gap-1 rounded-full flex bg-[rgba(52,168,83,1)] text-white">
                                         <span className="flex mt-[1.5px]">
@@ -32,12 +33,12 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => {
                                     </span>
                                 </div>
                             </div>
-                            <span className="text-[rgba(52,168,83,1)] font-[500]">{item.stockStatus}</span>
+                            <span className="text-[rgba(52,168,83,1)] font-[500] text-sm">{item.stockStatus}</span>
                         </div>
                     </div>
 
                     {/* Pricing and Quantity */}
-                    <div className="flex flex-col items-center gap-4 ml-10">
+                    <div className="flex flex-col items-center gap-4 md:ml-10">
                         <div>
                             <p className="font-bold text-lg text-black">
                                 {item.currentPrice.toLocaleString("en-NG", {
@@ -45,7 +46,7 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => {
                                     currency: "NGN",
                                 })}
                             </p>
-                            <p className="line-through text-gray-500 text-right">
+                            <p className="line-through text-gray-500 md:text-right">
                                 {item.oldPrice.toLocaleString("en-NG", {
                                     style: "currency",
                                     currency: "NGN",
@@ -57,12 +58,12 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => {
                 <div className="flex w-full justify-between">
                     <div className="flex gap-2 mt-3">
                         {/* Remove Button */}
-                        <svg className="mt-2" width="16" height="18" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="mt-2" width="14" height="16" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.9375 3.77655H1.0625C0.847012 3.77655 0.640349 3.86215 0.487976 4.01453C0.335603 4.1669 0.25 4.37356 0.25 4.58905C0.25 4.80454 0.335603 5.0112 0.487976 5.16357C0.640349 5.31595 0.847012 5.40155 1.0625 5.40155H1.875V20.0266C1.875 20.4575 2.0462 20.8709 2.35095 21.1756C2.6557 21.4803 3.06902 21.6516 3.5 21.6516H16.5C16.931 21.6516 17.3443 21.4803 17.649 21.1756C17.9538 20.8709 18.125 20.4575 18.125 20.0266V5.40155H18.9375C19.153 5.40155 19.3597 5.31595 19.512 5.16357C19.6644 5.0112 19.75 4.80454 19.75 4.58905C19.75 4.37356 19.6644 4.1669 19.512 4.01453C19.3597 3.86215 19.153 3.77655 18.9375 3.77655ZM16.5 20.0266H3.5V5.40155H16.5V20.0266ZM5.125 1.33905C5.125 1.12356 5.2106 0.916899 5.36298 0.764526C5.51535 0.612153 5.72201 0.52655 5.9375 0.52655H14.0625C14.278 0.52655 14.4847 0.612153 14.637 0.764526C14.7894 0.916899 14.875 1.12356 14.875 1.33905C14.875 1.55454 14.7894 1.7612 14.637 1.91357C14.4847 2.06595 14.278 2.15155 14.0625 2.15155H5.9375C5.72201 2.15155 5.51535 2.06595 5.36298 1.91357C5.2106 1.7612 5.125 1.55454 5.125 1.33905Z" fill="#FF6F22" />
                         </svg>
                         <button
                             onClick={onRemove}
-                            className="text-kuduOrange mt-2 font-[500] hover:underline text-sm md:text-base"
+                            className="text-kuduOrange mt-2 font-[500] hover:underline text-sm"
                         >
                             REMOVE
                         </button>
@@ -77,7 +78,7 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => {
                             >
                                 -
                             </button>
-                            <span className="px-4 py-1 border border-gray-300 rounded">
+                            <span className="px-4 py-1 text-sm font-semibold rounded">
                                 {item.quantity}
                             </span>
                             <button
@@ -97,7 +98,7 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => {
 const CartBlock = () => {
     const items = [
         {
-            id: 1,
+            id: 14,
             name: "Rolex Oyster Perpetual Datejust 41 Jewel Tray",
             stockStatus: "In stock",
             image: "/images/watch-cart.png",
@@ -106,15 +107,16 @@ const CartBlock = () => {
             quantity: 2,
         },
         {
-            id: 2,
+            id: 24,
             name: "Rolex Oyster Perpetual Datejust 41 Jewel Tray",
+            stockStatus: "In stock",
             image: "/images/watch-cart.png",
             currentPrice: 14590000,
             oldPrice: 15000000,
             quantity: 1,
         },
         {
-            id: 1,
+            id: 31,
             name: "Rolex Oyster Perpetual Datejust 41 Jewel Tray",
             stockStatus: "In stock",
             image: "/images/watch-cart.png",
@@ -123,16 +125,18 @@ const CartBlock = () => {
             quantity: 2,
         },
         {
-            id: 2,
+            id: 23,
             name: "Rolex Oyster Perpetual Datejust 41 Jewel Tray",
+            stockStatus: "In stock",
             image: "/images/watch-cart.png",
             currentPrice: 14590000,
             oldPrice: 15000000,
             quantity: 1,
         },
         {
-            id: 2,
+            id: 26,
             name: "Rolex Oyster Perpetual Datejust 41 Jewel Tray",
+            stockStatus: "In stock",
             image: "/images/watch-cart.png",
             currentPrice: 14590000,
             oldPrice: 15000000,
@@ -153,12 +157,12 @@ const CartBlock = () => {
     };
 
     return (
-        <div className="w-full flex flex-col gap-5 py-4 rounded-lg bg-white">
+        <div className="w-full flex flex-col gap-2 py-4 rounded-lg bg-white">
             <div className="flex flex-col px-10 gap-4">
                 <h1 className="text-lg font-semibold mb-6 mt-4">CART ({items.length})</h1>
             </div>
             <div className="w-full h-[1px] -mt-4 border border-[1.5px]" />
-            <div className="w-full flex flex-col gap-5 px-10 bg-white">
+            <div className="w-full flex flex-col gap-5 md:px-10 px-3 bg-white">
                 {items.map((item) => (
                     <CartItem
                         key={item.id}

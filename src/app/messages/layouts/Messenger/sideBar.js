@@ -51,18 +51,20 @@ const users = [
 
 const UserCard = ({ user }) => {
     return (
-        <div className="flex items-start gap-4 py-1">
-            <Image
-                src={user.image}
-                alt={user.name}
-                width={50}
-                height={50}
-                className="w-10 h-10 rounded-full"
-            />
+        <div className="flex items-start w-full gap-4 py-1">
+            <div className="flex w-14">
+                <Image
+                    src={user.image}
+                    alt={user.name}
+                    width={50}
+                    height={50}
+                    className="rounded-full"
+                />
+            </div>
             <div className="flex flex-col gap-1">
                 <div className="flex gap-3">
                     <h3 className="">{user.name}</h3>
-                    <span className="bg-kuduOrange text-white px-2 py-1 rounded-md text-xs font-medium">
+                    <span className="bg-kuduOrange text-white px-2 py-1 md:flex hidden rounded-md text-xs font-medium">
                         {user.company}
                     </span>
                 </div>
@@ -77,13 +79,13 @@ const UserCard = ({ user }) => {
 export default function ChatSideBar() {
     return (
         <>
-            <div className="md:w-[32%] w-full flex flex-col gap-2 mt-[1px] relative overflow-auto">
+            <div className="md:w-[32%] w-full flex flex-col gap-2 mt-[1px] bg-white relative">
                 {/** Search Bar */}
-                <div className="w-full flex px-10 py-5 md:relative fixed">
+                <div className="w-full flex px-10 md:py-5 py-2 md:mt-0 mt-2 relative">
                     <SearchInput />
                 </div>
 
-                <div className="w-full flex flex-row md:flex-col h-full px-5 md:mt-0 mt-24 mb-4 md:mb-0 md:gap-8 gap-20">
+                <div className="w-full flex flex-row md:flex-col h-full overflow-auto px-5 pb-5 md:pb-0 md:mt-0 mt-2 md:mb-0 md:gap-8 gap-10">
                     {users.map((user, index) => (
                         <UserCard key={index} user={user} />
                     ))}

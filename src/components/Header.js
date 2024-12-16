@@ -111,7 +111,7 @@ export default function Header({ module }) {
                             } hideCaret btnClass="bg-transparent mt-3 px-1">
                                 {arrOptions.map((options, index) => (
                                     <Link href={`/${options.slug}`}
-                                        className="block px-4 py-2 text-xs text-gray-700 cursor-pointer" key={index}>
+                                        className="block px-4 py-2 text-sm text-gray-700 cursor-pointer" key={index}>
                                         {options.value}
                                     </Link>
                                 ))}

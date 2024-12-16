@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 const CartSummary = () => {
     return (
         <>
-            <div className="w-full flex flex-col gap-5 py-4 rounded-lg bg-white">
+            <div className="w-full flex flex-col gap-2 py-4 rounded-lg bg-white">
                 <div className="flex flex-col px-4 gap-4">
                     <h1 className="text-lg font-semibold mb-6 mt-4 uppercase">CART Summary</h1>
                 </div>
@@ -28,9 +28,9 @@ const CartSummary = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-[1px] -mt-4 border border-[1.5px]" />
+                <div className="w-full h-[1px] mt-1 border border-[1.5px]" />
 
-                <div className="flex justify-center w-full">
+                <div className="flex justify-center mt-2 w-full">
                     <Button className="w-3/4 py-3 px-4 flex justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-[500] transition-colors">
                         <span className="text-sm font-[500]">Checkout ₦75,5090,000</span>
                     </Button>

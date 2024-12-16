@@ -32,7 +32,7 @@ export default function ProductConditions() {
                         SORT BY
                     </p>
                     <p className="md:text-sm text-xs cursor-pointer font-semibold underline text-kuduOrange flex">
-                        View all Categories
+                        View all Auctions
                     </p>
                 </div>
                 <div className="grid w-full lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-4">

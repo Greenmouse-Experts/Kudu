@@ -36,10 +36,10 @@ const ChatInterface = () => {
     }, [messages]);
 
     return (
-        <div className="md:w-[68%] w-full flex flex-col gap-2 mt-[1px] relative border-l-2 overflow-auto">
+        <div className="md:w-[68%] w-full flex flex-col gap-2 md:mt-[1px] bg-white relative border-l-2 overflow-auto">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b-2">
-                <div className="flex items-center">
+                <div className="flex items-center gap-3">
                     <Image
                         src="/images/sneakers-boot.jpg"
                         alt="Product"

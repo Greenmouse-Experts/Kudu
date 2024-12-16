@@ -9,7 +9,7 @@ export default function Messages() {
 
                 {/** DESKTOP MESSAGING BLOCK */}
                 <div className="md:w-[78.5%] xl:w-[71%] w-full flex max-h-[83vh] md:fixed">
-                    <div className="bg-white w-full flex-col relative max-h-[83vh]">
+                    <div className="bg-kuduLightBlue w-full flex-col relative max-h-[83vh]">
                         <Messenger />
                     </div>
                 </div>

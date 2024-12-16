@@ -53,7 +53,7 @@ export default function ProductsSection() {
     return (
         <>
             <div className="flex flex-col gap-5 w-full">
-                <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-14 bg-white p-3 shadow-sm">
+                <div className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-14 bg-white p-3 shadow-sm">
                     {productsArr.slice(0, 5).map((product, index) => (
                         <Link href={'/product/id'} key={index}>
                             <div className="flex flex-col gap-4">
