@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ProductConditions from "./layouts/productConditions";
 import ProductsSection from "./layouts/productsSection";
 import Footer from "@/components/Footer";

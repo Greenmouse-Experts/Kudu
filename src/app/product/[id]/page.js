@@ -2,7 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function ViewProduct() {
     const labels = ["Brand New", "Fashion", "Watches"];

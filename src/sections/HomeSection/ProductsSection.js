@@ -1,7 +1,7 @@
 "use client";
 
 import Badge from "@/components/Badge";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 export default function ProductsSection() {
@@ -75,11 +75,11 @@ export default function ProductsSection() {
                         <Link href={'/product/id'} key={index}>
                             <div className="flex flex-col gap-4">
                                 <div className="flex justify-center relative h-[200px]">
-                                    <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
-                                    <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
+                                    <Image src={product.photo} width={350} height={350} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
+                                    <span className="absolute top-2 left-1 w-[24px] h-[24px] p-1 flex justify-center rounded-full bg-kuduLightBlue">
                                         <Image src={'/images/tag.svg'} alt="tag" width={13} height={13} />
                                     </span>
-                                    <span className="absolute top-1 right-1">
+                                    <span className="absolute top-2 right-1">
                                         <Badge bgColor={product.status === 'Brand New' ? 'bg-kuduGreen' : 'bg-kuduRed'} text={product.status}
                                             textColor={'text-white'}
                                         />
@@ -140,8 +140,8 @@ export default function ProductsSection() {
                         <Link href={'/product/id'} key={index}>
                             <div className="flex flex-col gap-4">
                                 <div className="flex justify-center relative h-[200px]">
-                                    <Image src={product.photo} width={200} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
-                                    <span className="absolute top-1 left-1 p-2 rounded-full bg-kuduLightBlue">
+                                    <Image src={product.photo} width={350} height={350} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
+                                    <span className="absolute top-2 left-1 w-[24px] h-[24px] p-[6px] flex justify-center rounded-full bg-kuduLightBlue">
                                         <Image src={'/images/tag.svg'} alt="tag" width={13} height={13} />
                                     </span>
                                     <span className="absolute top-1 right-1">

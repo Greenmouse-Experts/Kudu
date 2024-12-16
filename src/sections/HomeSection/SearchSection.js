@@ -1,7 +1,7 @@
 "use client";
 
 import DropdownMenu from "@/components/DropdownMenu";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useState } from "react";
 
 export default function SearchSection() {
