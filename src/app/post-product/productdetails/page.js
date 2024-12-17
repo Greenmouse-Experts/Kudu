@@ -19,9 +19,9 @@ export default function ProductDetails() {
         <>
             <div className="w-full flex flex-col h-full bg-kuduLightBlue">
                 <Header module={'home'} />
-                <div className="w-full flex flex-col h-full xl:px-80 lg:pl-40 lg:pr-36 md:px-4 px-5 py-3 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
+                <div className="w-full flex flex-col h-full xl:px-80 lg:pl-40 lg:pr-36 md:px-4 py-3 lg:gap-10 md:gap-8 gap-5 bg-kuduLightBlue h-full">
                     <div className="w-full flex flex-col gap-4">
-                        <div className="w-full py-3 md:px-28 px-4 flex flex-col md:mt-20 mt-14 gap-8">
+                        <div className="w-full py-3 md:px-28 flex flex-col md:mt-20 mt-14 gap-8">
 
                             <div className="w-full bg-white shadow rounded-md shadow-md py-4 px-8">
                                 <div className="w-full flex justify-between">
@@ -35,7 +35,7 @@ export default function ProductDetails() {
                             </div>
 
                             <div className="w-full bg-white shadow rounded-md shadow-md py-4 gap-7 flex justify-center">
-                                <div className="md:w-[70%] w-full flex flex-col py-7 gap-7">
+                                <div className="md:w-[70%] w-full flex flex-col md:py-7 md:px-0 py-3 px-3 gap-7">
                                     <p className="font-semibold text-lg uppercase mt-3">Product Details</p>
                                     <div className="w-full flex-col flex gap-7">
                                         <div className="w-full flex md:flex-row flex-col gap-7">
@@ -63,7 +63,7 @@ export default function ProductDetails() {
 
 
                             <div className="w-full bg-white shadow rounded-md shadow-md py-4 gap-7 flex justify-center">
-                                <div className="md:w-[70%] w-full flex flex-col py-7 gap-7">
+                                <div className="md:w-[70%] w-full flex flex-col md:py-7 md:px-0 py-3 px-3 gap-7">
                                     <p className="font-semibold text-lg uppercase mt-3">Delivery</p>
                                     <div className="w-full flex-col flex gap-7">
                                         <div className="w-full">
@@ -88,7 +88,7 @@ export default function ProductDetails() {
 
                             
                             <div className="w-full bg-white shadow rounded-md shadow-md py-4 gap-7 flex justify-center">
-                                <div className="md:w-[70%] w-full flex flex-col py-7 gap-7">
+                                <div className="md:w-[70%] w-full flex flex-col md:py-7 md:px-0 py-3 px-3 gap-7">
                                     <button
                                         type="submit"
                                         className="w-full py-4 px-4 flex justify-center gap-2 bg-kuduOrange text-white rounded-lg transition-colors"

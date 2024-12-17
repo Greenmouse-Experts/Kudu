@@ -10,8 +10,8 @@ export default function ProductListing({ productsArr }) {
             {productsArr.map((product, index) => (
                 <Link href={'/product/id'} key={`${index}0`}>
                     <div className="flex flex-col gap-4">
-                        <div className="flex justify-center relative lg:h-[200px]">
-                            <Image src={product.photo} width={650} height={650} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt={product.title} />
+                        <div className="flex justify-center relative md:h-[200px] h-[150px]">
+                            <Image src={product.photo} width={650} height={650} className="object-cover" alt={product.title} />
                             <span className="absolute top-2 left-1 w-[24px] h-[24px] p-[6px] flex justify-center rounded-full bg-kuduLightBlue">
                                 <Image src={'/images/tag.svg'} alt="tag" width={13} height={13} />
                             </span>

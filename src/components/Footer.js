@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="bg-kuduOrange text-white relative w-full">
             <div className="relative bg-kuduOrange lg:min-h-[660px] h-full">
-                <div className="w-full flex py-10 justify-between items-center lg:px-44 xl:px-80 lg:flex-row md:flex-row flex-col px-10 gap-20 xl:gap-48">
+                <div className="w-full flex py-10 justify-between items-center lg:px-44 xl:px-80 lg:flex-row md:flex-row flex-col px-10 gap-10 md:gap-20 xl:gap-48">
                     <div className="md:flex xl:w-1/4 md:w-1/4 flex-grow hidden">
                         <Image src={'/images/kudu1.png'} alt="kudu logo" width={150} height={50} />
                     </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-black p-5 lg:hidden md:hidden flex justify-center flex-wrap gap-x-8 gap-y-6">
+                <div className="w-full bg-black p-5 lg:hidden md:hidden flex justify-center text-sm flex-wrap gap-x-8 gap-y-6">
                     <span><a href="#" className="text-gray-400">About Us</a></span>
                     <span><a href="#" className="text-gray-400">Contact Us</a></span>
                     <span><a href="#" className="text-gray-400">Privacy Policy</a></span>

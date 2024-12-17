@@ -3,10 +3,43 @@
 import Header from "@/components/Header";
 import CartBlock from "./layouts/cartsBlock";
 import CartSummary from "./layouts/cartSummary";
-import RecentViewedProducts from "@/components/RecentViewedProducts";
 import Footer from "@/components/Footer";
+import ProductListing from "@/components/ProductsList";
 
 export default function Cart() {
+    const productsArr = [
+        {
+            photo: "/images/clothProduct.png",
+            title: "85 inch Oled Television",
+            price: "₦ 63,500",
+            status: "Used",
+        },
+        {
+            photo: "/images/television.png",
+            title: "85 inch Oled Television",
+            price: "₦ 63,500",
+            status: "Brand New"
+        },
+        {
+            photo: "/images/sneakers.png",
+            title: "85 inch Oled Television",
+            price: "₦ 63,500",
+            status: "Brand New"
+        },
+        {
+            photo: "/images/toyota.png",
+            title: "85 inch Oled Television",
+            price: "₦ 63,500",
+            status: "Brand New"
+        },
+        {
+            photo: "/images/sneakers_shoe.png",
+            title: "85 inch Oled Television",
+            price: "₦ 63,500",
+            status: "Brand New"
+        },
+    ];
+
     return (
         <>
             <div className="w-full flex flex-col h-full bg-kuduLightBlue">
@@ -18,7 +51,7 @@ export default function Cart() {
                     </div>
                     <div className="w-full flex flex-col gap-6 items-start mt-10">
                         <p className="md:text-xl text-base font-semibold">Your Recently Viewed Products</p>
-                        <RecentViewedProducts />
+                        <ProductListing productsArr={productsArr} />
                     </div>
                 </div>
                 <div className="w-full flex flex-col gap-6 items-start mt-24">
